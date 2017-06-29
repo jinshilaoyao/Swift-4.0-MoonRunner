@@ -143,20 +143,12 @@
                                             <constraint firstItem="sP3-YI-w8v" firstAttribute="width" secondItem="XiM-Tb-dPF" secondAttribute="width" id="znb-nd-3QU"/>
                                         </constraints>
                                     </stackView>
+                                    <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-jd-PD2" userLabel="Map Container View">
+                                        <rect key="frame" x="10" y="267" width="323" height="0.0"/>
+                                    </mapView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rO9-n6-3aN" userLabel="Button Stack View">
                                         <rect key="frame" x="30" y="277" width="283" height="256.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-kB-UAe">
-                                                <rect key="frame" x="0.0" y="0.0" width="283" height="256.5"/>
-                                                <color key="backgroundColor" red="0.0" green="0.57344603540000005" blue="0.27058163289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Start!">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="startTapped" destination="uBb-oE-18m" eventType="touchUpInside" id="sRg-Ii-BqR"/>
-                                                </connections>
-                                            </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3O-Ns-MFS">
                                                 <rect key="frame" x="0.0" y="-349" width="283" height="0.0"/>
                                                 <color key="backgroundColor" red="0.9991341233253479" green="0.11384636908769608" blue="0.1422920823097229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -168,10 +160,22 @@
                                                     <action selector="stopTapped" destination="uBb-oE-18m" eventType="touchUpInside" id="Efz-0w-UO7"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-kB-UAe">
+                                                <rect key="frame" x="0.0" y="0.0" width="283" height="256.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.57344603540000005" blue="0.27058163289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Start!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="startTapped" destination="uBb-oE-18m" eventType="touchUpInside" id="sRg-Ii-BqR"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="OBn-jd-PD2" firstAttribute="width" secondItem="XiM-Tb-dPF" secondAttribute="width" id="6D4-1L-LcX"/>
                                     <constraint firstItem="rO9-n6-3aN" firstAttribute="width" secondItem="WML-Dt-Sv2" secondAttribute="width" constant="-60" id="oS0-pa-jfD"/>
                                     <constraint firstItem="XiM-Tb-dPF" firstAttribute="width" secondItem="WML-Dt-Sv2" secondAttribute="width" constant="-20" id="yas-oQ-ZQi"/>
                                 </constraints>
@@ -189,6 +193,7 @@
                         <outlet property="dataStackView" destination="sP3-YI-w8v" id="Eb8-4V-YAC"/>
                         <outlet property="distanceLabel" destination="Gp7-dS-cbT" id="S8x-2t-Gc6"/>
                         <outlet property="launchPromptStackView" destination="TEI-Oa-26B" id="Ir8-bm-Xdv"/>
+                        <outlet property="mapView" destination="OBn-jd-PD2" id="yht-mt-t9u"/>
                         <outlet property="paceLabel" destination="BHC-x5-Y74" id="Szg-lH-WhP"/>
                         <outlet property="startButton" destination="wHH-kB-UAe" id="ue4-yW-I2A"/>
                         <outlet property="stopButton" destination="y3O-Ns-MFS" id="Ijs-oa-iSz"/>
