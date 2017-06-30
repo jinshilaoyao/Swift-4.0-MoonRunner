@@ -21,6 +21,12 @@
 		EB449AFD1F03924700B95F31 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18350CE71E882A860054E1C6 /* StoryboardSupport.swift */; };
 		EB449AFF1F03996600B95F31 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB449AFE1F03996600B95F31 /* UnitExtensions.swift */; };
 		EB449B011F039F4600B95F31 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB449B001F039F4600B95F31 /* FormatDisplay.swift */; };
+		EB76B2001F05E85800CBA0A0 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76B1FF1F05E85800CBA0A0 /* Badge.swift */; };
+		EB76B2021F05F04B00CBA0A0 /* BadgeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76B2011F05F04B00CBA0A0 /* BadgeStatus.swift */; };
+		EB76B2041F05F69400CBA0A0 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76B2031F05F69400CBA0A0 /* BadgeCell.swift */; };
+		EB76B2061F05F87500CBA0A0 /* BadgesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76B2051F05F87500CBA0A0 /* BadgesTableViewController.swift */; };
+		EB76B2081F06274200CBA0A0 /* BadgeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76B2071F06274200CBA0A0 /* BadgeDetailsViewController.swift */; };
+		EB76B20A1F063C6F00CBA0A0 /* BadgeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76B2091F063C6F00CBA0A0 /* BadgeAnnotation.swift */; };
 		EB86E42E1F049CDA00DD37FC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB86E42D1F049CDA00DD37FC /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,12 @@
 		EB2348891F04E848004CD610 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
 		EB449AFE1F03996600B95F31 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
 		EB449B001F039F4600B95F31 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		EB76B1FF1F05E85800CBA0A0 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		EB76B2011F05F04B00CBA0A0 /* BadgeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStatus.swift; sourceTree = "<group>"; };
+		EB76B2031F05F69400CBA0A0 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
+		EB76B2051F05F87500CBA0A0 /* BadgesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesTableViewController.swift; sourceTree = "<group>"; };
+		EB76B2071F06274200CBA0A0 /* BadgeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeDetailsViewController.swift; sourceTree = "<group>"; };
+		EB76B2091F063C6F00CBA0A0 /* BadgeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeAnnotation.swift; sourceTree = "<group>"; };
 		EB86E42D1F049CDA00DD37FC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				18888DD81E7F1D940038A3AF /* CoreDataStack.swift */,
+				EB76B1FF1F05E85800CBA0A0 /* Badge.swift */,
+				EB76B2011F05F04B00CBA0A0 /* BadgeStatus.swift */,
 				18888DC91E7F0FA80038A3AF /* MoonRunner.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -124,6 +138,10 @@
 				18CF26F01E80292C0097F88C /* RunDetailsViewController.swift */,
 				EB86E42D1F049CDA00DD37FC /* LocationManager.swift */,
 				EB2348891F04E848004CD610 /* MulticolorPolyline.swift */,
+				EB76B2031F05F69400CBA0A0 /* BadgeCell.swift */,
+				EB76B2051F05F87500CBA0A0 /* BadgesTableViewController.swift */,
+				EB76B2071F06274200CBA0A0 /* BadgeDetailsViewController.swift */,
+				EB76B2091F063C6F00CBA0A0 /* BadgeAnnotation.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -208,16 +226,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CF26EF1E80291E0097F88C /* NewRunViewController.swift in Sources */,
+				EB76B2001F05E85800CBA0A0 /* Badge.swift in Sources */,
 				18888DD91E7F1D940038A3AF /* CoreDataStack.swift in Sources */,
 				EB86E42E1F049CDA00DD37FC /* LocationManager.swift in Sources */,
 				18888DCB1E7F0FA80038A3AF /* MoonRunner.xcdatamodeld in Sources */,
 				18CF26F11E80292C0097F88C /* RunDetailsViewController.swift in Sources */,
+				EB76B2081F06274200CBA0A0 /* BadgeDetailsViewController.swift in Sources */,
 				EB23488A1F04E848004CD610 /* MulticolorPolyline.swift in Sources */,
 				18888DC31E7F0FA80038A3AF /* AppDelegate.swift in Sources */,
 				18CF26ED1E80290C0097F88C /* HomeViewController.swift in Sources */,
 				EB449B011F039F4600B95F31 /* FormatDisplay.swift in Sources */,
+				EB76B2021F05F04B00CBA0A0 /* BadgeStatus.swift in Sources */,
 				EB449AFD1F03924700B95F31 /* StoryboardSupport.swift in Sources */,
+				EB76B2061F05F87500CBA0A0 /* BadgesTableViewController.swift in Sources */,
 				EB449AFF1F03996600B95F31 /* UnitExtensions.swift in Sources */,
+				EB76B20A1F063C6F00CBA0A0 /* BadgeAnnotation.swift in Sources */,
+				EB76B2041F05F69400CBA0A0 /* BadgeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
